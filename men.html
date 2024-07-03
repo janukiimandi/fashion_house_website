@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Janu Clothing Store - Men's Collection Dashboard</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f4f4f4;
+            font-family: 'Arial', sans-serif;
+        }
+        .jumbotron {
+            background-color: #333;
+            color: white;
+            padding: 2rem;
+            margin-bottom: 0;
+        }
+        .category-card {
+            border: none;
+            border-radius: 25px;
+            overflow: hidden;
+            transition: transform 0.2s;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .category-card:hover {
+            transform: scale(1.05);
+        }
+        .featured-product-card {
+            border: none;
+            border-radius: 25px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+        .featured-product-card:hover {
+            transform: translateY(-5px);
+        }
+        .btn-custom {
+            background-color: #ff6b6b;
+            border-color: #ff6b6b;
+            color: white;
+        }
+        .btn-custom:hover {
+            background-color: #ff4757;
+            border-color: #ff4757;
+        }
+        .footer {
+            background-color: #007bff;
+            color: white;
+            padding: 2rem 0;
+        }
+        .footer-column {
+            margin-bottom: 1rem;
+        }
+        .footer h3 {
+            margin-bottom: 1rem;
+        }
+        .footer p, .footer a {
+            color: white;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        .social-links, .quick-links {
+            list-style: none;
+            padding: 0;
+        }
+        .social-links li, .quick-links li {
+            margin-bottom: 0.5rem;
+        }
+        .footer-bottom {
+            background-color: #0056b3;
+            padding: 1rem 0;
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+
+<div class="jumbotron text-center">
+    <h1>Welcome to Janu Clothing Shop</h1>
+    <p>Discover the latest trends in men's fashion</p>
+    <a href="clothing shop.html" class="btn btn-secondary">Back</a>
+</div>
+
+<div class="container mt-5">
+    <h2 class="mb-4 text-center">Explore Our Collections</h2>
+    <div class="row">
+
+        <!-- T-shirt -->
+        <div class="col-md-4 mb-4">
+            <div class="card category-card" style="background-color: #007bff;">
+            
+                <div class="card-body">
+                    <h5 class="card-title text-white">T-shirt Collection</h5>
+                    <a href="T SHIRT.html" class="btn btn-custom">View More</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Jeans -->
+        <div class="col-md-4 mb-4">
+            <div class="card category-card" style="background-color: #007bff;">
+                
+                <div class="card-body">
+                    <h5 class="card-title text-white">Jeans Collection</h5>
+                    <a href="jeans.html" class="btn btn-custom">View More</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Shirts -->
+        <div class="col-md-4 mb-4">
+            <div class="card category-card" style="background-color: #007bff;">
+             
+                <div class="card-body">
+                    <h5 class="card-title text-white">Shirts Collection</h5>
+                    <a href="shirt.html" class="btn btn-custom">View More</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Jackets -->
+        <div class="col-md-4 mb-4 offset-md-2"> <!-- Centering the Jackets card -->
+            <div class="card category-card" style="background-color: #007bff;">
+               
+                <div class="card-body">
+                    <h5 class="card-title text-white">Jackets Collection</h5>
+                    <a href="jackert.html" class="btn btn-custom">View More</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Shoes -->
+        <div class="col-md-4 mb-4"> <!-- Centering the Shoes card -->
+            <div class="card category-card" style="background-color: #007bff;">
+               
+                <div class="card-body">
+                    <h5 class="card-title text-white">Shoes Collection</h5>
+                    <a href="shose.html" class="btn btn-custom">View More</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+
+<!-- Footer Section -->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 footer-column">
+                <h3>Contact Us</h3>
+                <p>123 Fashion Street, Style City, Fashionland</p>
+                <p>Email: info@januclothing.com</p>
+                <p>Phone: +123 456 7890</p>
+            </div>
+            <div class="col-md-3 footer-column">
+                <h3>Follow Us</h3>
+                <ul class="social-links">
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Pinterest</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 footer-column">
+                <h3>Newsletter</h3>
+                <form action="#">
+                    <input type="email" class="form-control mb-2" placeholder="Your email address" required>
+                    <button type="submit" class="btn btn-warning">Subscribe</button>
+                </form>
+            </div>
+            <div class="col-md-3 footer-column">
+                <h3>Quick Links</h3>
+                <ul class="quick-links">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <title>Janu Clothing Shop</title>
+  <script>
+    async function buyNow(productName, productPrice) {
+      const customerEmail = prompt("Enter your email:");
+
+      if (customerEmail) {
+        const order = {
+          productName: productName,
+          productPrice: productPrice,
+          customerEmail: customerEmail
+        };
+
+        const response = await fetch('process_order.php', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(order)
+        });
+
+        const result = await response.json();
+
+        if (response.ok) {
+          alert(result.message);
+        } else {
+          alert(result.message);
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header class="bg-primary text-white py-4">
+    <div class="container d-flex justify-content-between align-items-center">
+        <div class="text-center flex-grow-1">
+            <h1>Janu Clothing Shop</h1>
+            <p>Your one-stop shop for trendy and stylish clothes</p>
+        </div>
+        <a href="men.html" class="btn btn-secondary">Back </a>
+    </div>
+</header>
+  <!-- Main Content -->
+  <div class="container mt-5">
+    <div class="row">
+        <!-- Card 1 -->
+        <div class="col-md-3 d-flex justify-content-center">
+            <div class="card" style="width: 18rem; text-align: center;">
+                <img src="j9.jpg" class="card-img-top" alt="T-shirt">
+                <div class="card-body">
+                    <h5 class="card-title">Baroque Pattern</h5>
+                    <p class="card-text">RS.3000</p>
+                    <a href="#" class="btn btn-primary" onclick="buyNow('Baroque Pattern', 3000)">BUY NOW</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-3 d-flex justify-content-center">
+            <div class="card" style="width: 18rem; text-align: center;">
+                <img src="j10.webp" class="card-img-top" alt="Jeans">
+                <div class="card-body">
+                    <h5 class="card-title">Plain, Light Beige t-shirt</h5>
+                    <p class="card-text">RS.4000</p>
+                    <a href="#" class="btn btn-primary" onclick="buyNow('Plain, Light Beige t-shirt', 4000)">BUY NOW</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-md-3 d-flex justify-content-center">
+            <div class="card" style="width: 18rem; text-align: center;">
+                <img src="j16.jpg" class="card-img-top" alt="Dress">
+                <div class="card-body">
+                    <h5 class="card-title">Men Slogan & Geo Print Tee t shirt</h5>
+                    <p class="card-text">RS.5000</p>
+                    <a href="#" class="btn btn-primary" onclick="buyNow('Men Slogan & Geo Print Tee t shirt', 5000)">BUY NOW</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col-md-3 d-flex justify-content-center">
+            <div class="card" style="width: 18rem; text-align: center;">
+                <img src="t11.jpg" class="card-img-top" alt="Sweater">
+                <div class="card-body">
+                    <h5 class="card-title">Blue-Gray Camouflage pattern</h5>
+                    <p class="card-text">RS.3500</p>
+                    <a href="#" class="btn btn-primary" onclick="buyNow('Blue-Gray Camouflage pattern', 3500)">BUY NOW</a>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <br>
+  <br>
+  
+  <div class="container mt-5">
+    <div class="row">
+        <!-- Card 1 -->
+        <div class="col-md-3 d-flex justify-content-center">
+            <div class="card" style="width: 18rem; text-align: center;">
+                <img src="j18.jpg" class="card-img-top" alt="T-shirt">
+                <div class="card-body">
+                    <h5 class="card-title">Men Letter & Graphic Print Tee Tshirt</h5>
+                    <p class="card-text">RS.3000</p>
+                    <a href="#" class="btn btn-primary" onclick="buyNow('Men Letter & Graphic Print Tee Tshirt', 3000)">BUY NOW</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-3 d-flex justify-content-center">
+            <div class="card" style="width: 18rem; text-align: center;">
+                <img src="j17.jpg" class="card-img-top" alt="Jeans">
+                <div class="card-body">
+                    <h5 class="card-title">Men Slogan Geo Print Tee t shirt</h5>
+                    <p class="card-text">RS.4000</p>
+                    <a href="#" class="btn btn-primary" onclick="buyNow('Men Slogan Geo Print Tee t shirt', 4000)">BUY NOW</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-md-3 d-flex justify-content-center">
+            <div class="card" style="width: 18rem; text-align: center;">
+                <img src="j14.jpg" class="card-img-top" alt="Dress">
+                <div class="card-body">
+                    <h5 class="card-title">Polo Collar Pure Cotton T-shirt</h5>
+                    <p class="card-text">RS.5000</p>
+                    <a href="#" class="btn btn-primary" onclick="buyNow('Polo Collar Pure Cotton T-shirt', 5000)">BUY NOW</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col-md-3 d-flex justify-content-center">
+            <div class="card" style="width: 18rem; text-align: center;">
+                <img src="j15.jpg" class="card-img-top" alt="Sweater">
+                <div class="card-body">
+                    <h5 class="card-title">Striped Chevron</h5>
+                    <p class="card-text">RS.3500</p>
+                    <a href="#" class="btn btn-primary" onclick="buyNow('Striped Chevron', 3500)">BUY NOW</a>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+  <footer class="bg-primary text-white text-center py-4 mt-5">
+    <div class="container">
+      <p>&copy; 2024 Janu Clothing Shop. All rights reserved.</p>
+      <p>Contact us: info@januclothingshop.com | +123 456 7890</p>
+    </div>
+  </footer>
+
+</body>
+</html>
